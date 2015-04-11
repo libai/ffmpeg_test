@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.exe.debug.941465521/LC_ALL/delimiter=\:
+environment/project/cdt.managedbuild.config.gnu.exe.debug.941465521/LC_ALL/operation=append
+environment/project/cdt.managedbuild.config.gnu.exe.debug.941465521/LC_ALL/value=C
+environment/project/cdt.managedbuild.config.gnu.exe.debug.941465521/append=true
+environment/project/cdt.managedbuild.config.gnu.exe.debug.941465521/appendContributed=true
+environment/project/cdt.managedbuild.config.gnu.exe.release.362939361/LC_ALL/delimiter=\:
+environment/project/cdt.managedbuild.config.gnu.exe.release.362939361/LC_ALL/operation=append
+environment/project/cdt.managedbuild.config.gnu.exe.release.362939361/LC_ALL/value=C
+environment/project/cdt.managedbuild.config.gnu.exe.release.362939361/PKG_CONFIG_PATH/delimiter=\:
+environment/project/cdt.managedbuild.config.gnu.exe.release.362939361/PKG_CONFIG_PATH/operation=append
+environment/project/cdt.managedbuild.config.gnu.exe.release.362939361/PKG_CONFIG_PATH/value=/opt/ffmpeg/lib/pkgconfig
+environment/project/cdt.managedbuild.config.gnu.exe.release.362939361/append=true
+environment/project/cdt.managedbuild.config.gnu.exe.release.362939361/appendContributed=true
