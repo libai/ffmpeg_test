@@ -8,7 +8,7 @@ static int decode_init(){
 	return 1;
 }
 
-int decode_start_best(void* p, char * filename, video_callback* video_callback(void* p, uint8_t *data, int size, int64_t pts), audio_callback* audio_callback(void* p, uint8_t *data, int size, int64_t pts)){
+int decode_start_best(void* p, const char * filename, int(* video_callback)(void* p, uint8_t *data, int size, int64_t pts), int(* audio_callback)(void* p, uint8_t *data, int size, int64_t pts)){
 	if (!init){
 		decode_init();
 	}
@@ -121,7 +121,7 @@ end:
 
 }
 
-int best_format(void* p, const char* filename, format_callback* fcb(void* p, int width, int height, int fps)){
+int best_format(void* p, const char* filename, void(*format_callback)(void* p, int width, int height, int fps)){
 	if (!init){
 		decode_init();
 	}
@@ -170,7 +170,7 @@ int best_format(void* p, const char* filename, format_callback* fcb(void* p, int
 			return 0;
 		}
 
-		fcb(p, video_dec_ctx->width, video_dec_ctx->height, 20);
+		format_callback(p, video_dec_ctx->width, video_dec_ctx->height, 20);
 	}
 	/*
 	if (audio_stream_index != -1){
