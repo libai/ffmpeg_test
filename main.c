@@ -15,7 +15,7 @@ void fcb(void* p, int width, int height, int fps){
 }
 int main(){
 
-	const char* filename = "rtsp://218.204.223.237:554/live/1/0547424F573B085C/gsfp90ef4k0a6iap.sdp";
+	const char* filename = "rtsp://127.0.0.1:1235/test1.sdp";
 	best_format(NULL, filename, fcb);
 	decode_start_best(NULL, filename, video_call, audio_call);
 
